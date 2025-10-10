@@ -1,0 +1,5 @@
+var usuario = {
+    nombreUsuario: "",
+    pass: ""
+
+}
