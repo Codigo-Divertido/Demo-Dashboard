@@ -18,9 +18,10 @@ function storageAvailable(type) {
 }
 
 if (storageAvailable("localStorage")) {
-
-    CrearItemtest();
     alert("¡Sí! Podemos usar lo genial de LocalStorage.");
+    console.log(localStorage);
+
+    CrearItemtest(usuarios);
     OptenerItemtest();
 
 } else {
