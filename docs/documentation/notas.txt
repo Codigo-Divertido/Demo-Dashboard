@@ -1,1 +1,0 @@
-https://codigo-divertido.github.io/Demo-Dashboard/dist/css/skins/_all-skins.min.css
