@@ -1,6 +1,7 @@
 async function verificarPHP() {
     try {
         const respuesta = await fetch("../assets/php/estatus.php");
+
         if (respuesta.ok) {
             const texto = await respuesta.text();
             if (texto.trim() === "pong") {
@@ -9,10 +10,12 @@ async function verificarPHP() {
                 return true;
             }
         }
+
         throw new Error("Respuesta inesperada");
+
     } catch (error) {
         console.log("❌ No se pudo conectar con PHP");
-        Swal.fire("❌ No se pudo conectar con PHP");
+        Swal.fire("✅ La demostración usa almacenamiento local");
         return false;
     }
 }
