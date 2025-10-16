@@ -5,8 +5,8 @@ async function verificarPHP() {
         if (respuesta.ok) {
             const texto = await respuesta.text();
             if (texto.trim() === "pong") {
-                console.log("✅ Conexión con PHP exitosa");
-                Swal.fire("✅ Conexión con PHP exitosa");
+                console.log("✅ Se usará el almacenamiento remoto");
+                Swal.fire("✅ Se usará el almacenamiento remoto");
                 return true;
             }
         }
@@ -14,8 +14,8 @@ async function verificarPHP() {
         throw new Error("Respuesta inesperada");
 
     } catch (error) {
-        console.log("✅ La demostración usa almacenamiento local");
-        Swal.fire("✅ La demostración usa almacenamiento local");
+        console.log("✅ Se usará el almacenamiento local");
+        Swal.fire("✅ Se usará el almacenamiento local");
         return false;
     }
 }
@@ -28,7 +28,7 @@ function ejecutarJS(argument) {
     console.log('Ejecutar algoritmo con JS');
 }
 // Llamar a la función
-verificarPHP();
+// verificarPHP();
 
 if (verificarPHP() == true) {
     ejecutarPHP();
