@@ -1,6 +1,6 @@
 async function verificarPHP() {
     try {
-        const respuesta = await fetch("../assets/php/estatus.php");
+        const respuesta = await fetch("../assets/code/estatus.php");
 
         if (respuesta.ok) {
             const texto = await respuesta.text();
