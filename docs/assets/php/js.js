@@ -20,5 +20,18 @@ async function verificarPHP() {
     }
 }
 
+function ejecutarPHP(argument) {
+    console.log('Ejecutar algoritmo con PHP');
+}
+
+function ejecutarJS(argument) {
+    console.log('Ejecutar algoritmo con JS');
+}
 // Llamar a la función
 verificarPHP();
+
+if (verificarPHP() == true) {
+    ejecutarPHP();
+} else {
+    ejecutarJS();
+}
