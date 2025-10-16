@@ -14,7 +14,7 @@ async function verificarPHP() {
         throw new Error("Respuesta inesperada");
 
     } catch (error) {
-        console.log("❌ No se pudo conectar con PHP");
+        console.log("✅ La demostración usa almacenamiento local");
         Swal.fire("✅ La demostración usa almacenamiento local");
         return false;
     }
